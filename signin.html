@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>TBMS Sign In</title>
+	<link rel="icon" type="image/jpg" href="title.jpg">
+	<script type="text/javascript">
+		function validate() {
+			var email=document.getElementById("email").value;
+            var pass=document.getElementById("pass").value;
+            if (email=='')
+                alert("Email is required");
+            if (!email.match(/^[A-Za-z\d]+@[tbms]+.[com]+$/))
+                alert("email not valid");
+            if (pass=='')
+                alert("Password is required");
+		}
+	</script>
+	<style type="text/css">
+		label{size:10px;font-style:italic;font-weight:bold;}
+        #signinbox {
+        	border:1px solid gray;
+        	border-radius:20px;
+	        margin:10% 25%;
+	        padding-left:5%;
+	        padding-bottom:20px;
+        }
+        #email,#pass {
+	        width:400px;
+	        height:30px;
+	        margin:10px 0px 20px;
+        }
+        #signbutton{
+        	background-color:skyblue;
+        	font-size:20px;
+        	text-align:center;
+        	margin-left: 23%;
+        	height:30px;width:100px;
+        }
+        pre{font-size:15px;}
+        #createbutton{margin-left:17%;text-align:center;height:30px;}
+	</style>
+</head>
+<body bgcolor="white">
+    <div id="signinbox">
+    	<a href="main.html"><img src="close.jpg" style="width:40px;height:40px;padding:5% 0 0 90%;"></a><br>
+		<h2> Sign In With TBMS...</h2><br>
+		<label>E-mail :</label><br><input type="email" name="email" id="email"><br>
+		<label>Password :</label><a href="" style="text-decoration:none;padding-left:180px;">Forgot your password ?</a><br><input type="password" name="password" id="pass"><br>
+		<input type="submit" value="Sign in" id="signbutton" onclick="validate()"><br><br>
+		<pre>      __________ New to TBMS ?_________</pre>
+		<input type="submit" value="Create your TBMS account" id="createbutton" onclick="window.location.href='signup.html'">
+	</div>
+	<div style="border-top-style:inset;text-align:center;">
+        Copyright &copy; 2018 All Right Reserved To Elnon &reg; Team.
+    </div>
+</body>
+</html>

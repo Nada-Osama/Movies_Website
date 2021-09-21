@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>TBMS Registration</title>
+	<link rel="icon" type="image/jpg" href="title.jpg">
+	<script type="text/javascript" src="javaScript.js"></script>
+	<style type="text/css">
+		label{size:10px;font-style:italic;font-weight:bold;}
+        #signinbox {
+        	border:1px solid gray;
+        	border-radius:20px;
+	        margin:10% 25%;
+	        padding-left:5%;
+	        padding-bottom:20px;
+        }
+        #email,.pass,#name {
+	        width:400px;
+	        height:30px;
+	        margin:10px 0px 20px;
+        }
+        #createbutton{
+        	margin-left:20%;
+        	text-align:center;
+        	height:40px;
+        	background-color:skyblue;
+        }
+	</style>
+</head>
+<body bgcolor="white">
+    <div id="signinbox">
+    	<a href="main.html"><img src="close.jpg" style="width:40px;height:40px;padding:5% 0 0 90%;"></a><br>
+		<h2> Create Account</h2><br>
+		<label>Your Name :</label><br><input type="text" name="name" id="name"><br>
+		<label>E-mail :</label><br><input type="email" name="email" id="email"><br>
+		<label>Password :</label><br><input type="password" name="password" class="pass" id="pass" placeholder=" At least 8 characters...."><br>
+		<label>Re-enter password :</label><br><input type="password" name="password" class="pass"><br>
+		<input type="submit" value="Create your TBMS account" id="createbutton" onclick="validate()"><br><br>
+		<font>Already have an account? </font><a href="signin.html">Sign in</a>
+	</div>
+	<div style="border-top-style:inset;text-align:center;">
+        Copyright &copy; 2018 All Right Reserved To Elnon &reg; Team.
+    </div>
+</body>
+</html>
